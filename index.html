@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #app {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 id="app">你瞅啥</h1>
+<script>
+    // 定时改变背景颜色
+    setInterval(function () {
+        document.body.style.backgroundColor = '#' + Math.random().toString(16).slice(2, 8);
+    }, 200);
+</script>
+</body>
+</html>
